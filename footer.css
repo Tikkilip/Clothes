@@ -1,0 +1,41 @@
+.footer_container {
+  width: 1166px;
+  height: 169px;
+  display: grid;
+  border: 1px solid red;
+  grid-template-columns: 355px 235px 411px;
+  grid-template-rows: 151px 49px 47px;
+  grid-template-areas:
+    "map adress ip"
+    "map phone social"
+    "map time .";
+  grid-column-gap: 124px;
+}
+
+.icons_social {
+  display: flex;
+  margin-top: 21px;
+}
+
+.icons_social > svg {
+  margin-right: 23px;
+}
+
+.unp {
+  margin-top: 8px;
+}
+
+.adress::before {
+  content: url(icons/point.svg);
+  margin-right: 8px;
+}
+
+.phone::before {
+  content: url(icons/phone.svg);
+  margin-right: 8px;
+}
+
+.time::before {
+  content: url(icons/clock.svg);
+  margin-right: 5px;
+}

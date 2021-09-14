@@ -1,0 +1,49 @@
+/*Footer*/
+:root {
+    --header-and-main-color: white;
+  }
+  
+  .header_layer_1 {
+    display: flex;
+    height: 108px;
+    background-color: var(--header-and-main-color);
+    opacity: 0;
+  }
+  
+  #logo {
+    position: absolute;
+    width: 150px;
+    height: 46.06px;
+    left: 142px;
+    top: 40px;
+  }
+  
+  .navigation_words {
+    position: absolute;
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 21px;
+    top: 53px;
+  }
+  
+  #women {
+    width: 100px;
+    left: 312px;
+    text-align: center;
+  }
+  
+  #men {
+    width: 36px;
+    left: 432px;
+  }
+  
+  #support {
+    width: 67px;
+    left: 488px;
+  }
+  
+  #review {
+    width: 58px;
+    left: 575px;
+  }
+  /*Footer*/

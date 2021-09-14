@@ -1,18 +1,59 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/Gilroy-Medium.woff) format("woff");
+}
+
+body {
+  font-family: "Gilroy";
+}
+
+footer {
+  background-color: #c4c4c4;
+}
+
 .footer_container {
-  width: 1166px;
-  height: 169px;
+  padding: 47px 137px 48px 137px;
   display: grid;
-  border: 1px solid red;
-  grid-template-columns: 355px 235px 411px;
-  grid-template-rows: 151px 49px 47px;
+  grid-template-columns: 355px 240px 420px;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    "map adress ip"
+    "map address ip"
     "map phone social"
     "map time .";
   grid-column-gap: 124px;
+  justify-content: center;
+}
+
+.map {
+  grid-area: map;
+  grid-column: 1;
+  grid-row: 1 / 5;
+  top: 0;
+}
+
+.address {
+  grid-area: address;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.time {
+  grid-area: time;
+}
+
+.ip {
+  grid-area: ip;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .icons_social {
+  grid-area: social;
   display: flex;
   margin-top: 21px;
 }
@@ -25,7 +66,7 @@
   margin-top: 8px;
 }
 
-.adress::before {
+.address::before {
   content: url(icons/point.svg);
   margin-right: 8px;
 }
@@ -38,4 +79,19 @@
 .time::before {
   content: url(icons/clock.svg);
   margin-right: 5px;
+}
+
+.address,
+.phone,
+.time {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.info_color {
+  color: #646464;
+  margin-bottom: 3px;
 }

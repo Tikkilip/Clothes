@@ -1,49 +1,151 @@
-/*Footer*/
+/*Header*/
 :root {
-    --header-and-main-color: white;
-  }
-  
-  .header_layer_1 {
-    display: flex;
-    height: 108px;
-    background-color: var(--header-and-main-color);
-    opacity: 0;
-  }
-  
-  #logo {
-    position: absolute;
-    width: 150px;
-    height: 46.06px;
-    left: 142px;
-    top: 40px;
-  }
-  
-  .navigation_words {
-    position: absolute;
-    font-family: Gilroy;
-    font-size: 18px;
-    line-height: 21px;
-    top: 53px;
-  }
-  
-  #women {
-    width: 100px;
-    left: 312px;
-    text-align: center;
-  }
-  
-  #men {
-    width: 36px;
-    left: 432px;
-  }
-  
-  #support {
-    width: 67px;
-    left: 488px;
-  }
-  
-  #review {
-    width: 58px;
-    left: 575px;
-  }
-  /*Footer*/
+  --header-and-main-color: white;
+}
+
+.header_layer_1 {
+  display: flex;
+  height: 108px;
+  background-color: var(--header-and-main-color);
+  opacity: 0;
+}
+
+#logo {
+  position: absolute;
+  width: 150px;
+  height: 46.06px;
+  left: 142px;
+  top: 40px;
+}
+
+.navigation_words {
+  position: absolute;
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 21px;
+  top: 53px;
+}
+
+#women {
+  width: 100px;
+  left: 312px;
+  text-align: center;
+}
+
+#men {
+  width: 36px;
+  left: 432px;
+}
+
+#support {
+  width: 67px;
+  left: 488px;
+}
+
+#review {
+  width: 58px;
+  left: 575px;
+}
+/*Header*/
+
+/*Начало футера*/
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/Gilroy-Medium.woff) format("woff");
+}
+
+body {
+  font-family: "Gilroy";
+}
+
+footer {
+  background-color: #c4c4c4;
+}
+
+.footer_container {
+  padding: 47px 137px 48px 137px;
+  display: grid;
+  grid-template-columns: 355px 240px 420px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "map address ip"
+    "map phone social"
+    "map time .";
+  grid-column-gap: 124px;
+  justify-content: center;
+}
+
+.map {
+  grid-area: map;
+  grid-column: 1;
+  grid-row: 1 / 5;
+  top: 0;
+}
+
+.address {
+  grid-area: address;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.time {
+  grid-area: time;
+}
+
+.ip {
+  grid-area: ip;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.icons_social {
+  grid-area: social;
+  display: flex;
+  margin-top: 21px;
+}
+
+.icons_social > svg {
+  margin-right: 23px;
+}
+
+.unp {
+  margin-top: 8px;
+}
+
+.address::before {
+  content: url(icons/point.svg);
+  margin-right: 8px;
+}
+
+.phone::before {
+  content: url(icons/phone.svg);
+  margin-right: 8px;
+}
+
+.time::before {
+  content: url(icons/clock.svg);
+  margin-right: 5px;
+}
+
+.address,
+.phone,
+.time {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.info_color {
+  color: #646464;
+  margin-bottom: 3px;
+}
+
+/*Конец футера*/

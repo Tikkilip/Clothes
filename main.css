@@ -1,4 +1,10 @@
 /*Header*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 :root {
   --header-and-main-color: white;
 }
@@ -55,12 +61,9 @@
   src: url(fonts/Gilroy-Medium.woff) format("woff");
 }
 
-body {
-  font-family: "Gilroy";
-}
-
 footer {
   background-color: #c4c4c4;
+  font-family: "Gilroy";
 }
 
 .footer_container {

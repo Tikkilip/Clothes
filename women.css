@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Swis721 Blk BT";
+  src: url(../fonts/Swis721\ Blk\ BT\ Black.woff) format("woff");
+}
+
+.woman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/woman.png) no-repeat;
+  background-size: cover;
+  height: 600px;
+  font-family: "Swis721 Blk BT";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 288px;
+  line-height: 346px;
+  text-align: center;
+  color: rgba(254, 173, 217, 0.7);
+}
+
+.list_menu {
+    margin: 30px 0 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items_menu {
+    display: inline-flex;
+    background-color: #F4D6E6;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.items_menu > li.items {
+    border-right: 1px solid black;
+}
+
+.items_menu > li {
+padding: 25px 90px 25px 25px;
+}

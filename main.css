@@ -1,16 +1,19 @@
 body {
   width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/*Header*/
+/*Начало Header*/
 :root {
-  --header-and-main-color: white;
+  --header-and-main-background-color: white;
 }
 
 .header_layer_1 {
   display: flex;
   height: 108px;
-  background-color: var(--header-and-main-color);
+  background-color: var(--header-and-main-background-color);
   opacity: 0;
 }
 
@@ -22,12 +25,17 @@ body {
   top: 40px;
 }
 
+#catalogue_list {
+  margin: 0px;
+}
+
 .navigation_words {
   position: absolute;
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-size: 18px;
   line-height: 21px;
   top: 53px;
+  list-style-type: none;
 }
 
 #women {
@@ -50,11 +58,18 @@ body {
   width: 58px;
   left: 575px;
 }
-/*Header*/
+/*Конец Header*/
 
-/*Main page*/
+/*Начало Main page*/
+
 .content {
   display: flex;
+  height: 4840px;
+}
+
+@font-face {
+  font-family: "Swis 721 Hv BT";
+  src: url(fonts/Swiss721BT-Heavy.woff) format("woff");
 }
 
 #autumn {
@@ -63,23 +78,66 @@ body {
   height: 288px;
   left: 125px;
   top: 338px;
-  font-family: Swis721 Hv BT;
+  font-family: "Swis721 Hv BT";
   font-style: normal;
   font-weight: 900;
   font-size: 80px;
   line-height: 96px;
 }
 
+#Model_in_black {
+  position: absolute;
+  width: 720px;
+  left: 720px;
+  top: 50px;
+}
+
+#Red_clothes {
+  position: absolute;
+  width: 669px;
+  height: 694px;
+  left: 0px;
+  top: 1022px;
+}
+
+.pink_words {
+  font-family: Swis721 Blk BT;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 115px;
+  text-align: center;
+  color: #feadd9;
+}
+
+#About_us {
+  position: absolute;
+  width: 543px;
+  left: 714px;
+  top: 1072px;
+}
+
+.usual_words {
+  position: absolute;
+  width: 600px;
+  height: 308px;
+  left: 714px;
+  top: 1223px;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: justify;
+}
+/*Конец Main page*/
 
 /*Начало футера*/
 
 @font-face {
   font-family: "Gilroy";
   src: url(fonts/Gilroy-Medium.woff) format("woff");
-}
-
-body {
-  font-family: "Gilroy";
 }
 
 footer {
@@ -120,7 +178,7 @@ footer {
 
 .ip {
   grid-area: ip;
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -159,7 +217,7 @@ footer {
 .address,
 .phone,
 .time {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
